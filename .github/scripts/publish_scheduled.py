@@ -124,8 +124,16 @@ def update_sitemap(slug: str):
 
 
 def insert_blog_card(title: str, description: str, image_path: str, slug: str):
-    """Insert a new card at the top of the card-grid in blog/index.html."""
+    """Insert a new card at the top of the card-grid in blog/index.html.
+    Skips silently if a card for this slug already exists (prevents duplicates
+    when republishing a scheduled draft of a post that was already manually
+    published)."""
     html = BLOG_INDEX.read_text()
+
+    # Skip if a card for this slug is already in the index
+    if f'href="{slug}.html"' in html:
+        print(f"  Card for {slug} already exists in blog/index.html, skipping insert.")
+        return
 
     new_card = (
         '\n          <div class="card reveal">\n'
