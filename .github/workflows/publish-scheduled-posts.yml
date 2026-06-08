@@ -7,6 +7,12 @@ on:
   workflow_dispatch:
     # Manual run from the Actions tab
 
+# Force Node.js 24 for all JavaScript actions in this workflow.
+# Future-proofs through the Node 20 -> 24 GitHub Actions migration
+# (Node 20 default ends 2026-06-16, Node 20 removed 2026-09-16).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   publish:
     runs-on: ubuntu-latest
