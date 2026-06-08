@@ -1,0 +1,43 @@
+name: Publish Scheduled Blog Posts
+
+on:
+  schedule:
+    # Runs daily at 12:00 UTC (~6am CST / 7am CDT)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    # Manual run from the Actions tab
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Publish any scheduled posts due today
+        run: python .github/scripts/publish_scheduled.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Scheduled Publisher"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add -A
+            git commit -m "Auto-publish scheduled blog posts ($(date +%Y-%m-%d))"
+            git push
+          else
+            echo "No scheduled posts due today."
+          fi

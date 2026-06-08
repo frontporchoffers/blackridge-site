@@ -1,0 +1,47 @@
+# Netlify configuration for Black Ridge Contracting
+
+[build]
+  publish = "."
+
+# Security headers — applied to every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent clickjacking (no one can embed your site in an iframe)
+    X-Frame-Options = "DENY"
+    # Prevent MIME-type sniffing attacks
+    X-Content-Type-Options = "nosniff"
+    # Control referrer information
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Content Security Policy — only allow resources from trusted sources
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data:; font-src 'self'; connect-src 'self' https://formspree.io; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;"
+    # Force HTTPS
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Prevent XSS attacks
+    X-XSS-Protection = "1; mode=block"
+    # Permissions policy — disable unnecessary browser features
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+# Cache static assets aggressively
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/pictures/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.blackridgecontractor.com/*"
+  to = "https://blackridgecontractor.com/:splat"
+  status = 301
+  force = true
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
