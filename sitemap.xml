@@ -23,7 +23,31 @@
   <!-- Service Pages -->
   <url>
     <loc>https://blackridgecontractor.com/services/roofing</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blackridgecontractor.com/services/roof-storm-damage</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blackridgecontractor.com/services/roof-repair</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blackridgecontractor.com/services/roof-replacement</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blackridgecontractor.com/services/roof-inspection</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
