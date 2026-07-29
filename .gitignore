@@ -20,3 +20,6 @@ venv/
 # Raw and intermediate photo workflow folders (not for deploy)
 pictures/Roofing pictures/
 pictures/roofing-jpg/
+
+# Google Indexing API queue file (workflow, not for deploy)
+index_queue.txt
