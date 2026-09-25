@@ -102,3 +102,24 @@ Indexing throttle is broken (Discovered — not indexed went from 28 → 0). Now
 - Lighthouse audits: `lighthouse-desmoines.json`, `lighthouse-homepage.json`, `lighthouse-roofing.json`
 - Vault mirror: `Drew's Brain/Projects/Blackridge Contractor/STATUS.md`
 - Active checklist (when work is in flight): `brc-site/GSC-INDEXING-CHECKLIST.md`
+
+---
+
+## Status check 2026-09-24
+
+- **Lead channel = phone calls (Drew, 9/24); form is secondary.** Gmail shows no real Formspree leads since March: submissions since March = Drew tests (4/5, 4/6, 4/22, 7/31) + two vendor pitches (6/15 DraftRise, 8/1 AI-SEO spam). Calls are untracked, so we cannot tie leads to pages or sources.
+- Latest GSC export on disk is 2026-06-08 (3.5 months stale): homepage pos ~10; siding/areas/concrete pages pos 35-55; 26 clicks total, 4 of them "black ridge exteriors" brand confusion.
+- Content engine healthy: roofing hub + 4 sub-pages (7/28), 14 areas pages enhanced, blog auto-publish cron running daily (9/7 + 9/21 posts shipped, 7 queued through 12/28). Hosting on Vercel since 7/29.
+- Diagnosis: site has no lead problem it can solve with more blog posts. Organic pages sit on page 4-5; contractor leads come from the map pack + reviews + paid local.
+- Still open from May: Iowa HBA membership, BBB. AggregateRating reviewCount hardcoded at 47. Verify vs real GBP count.
+
+- **Lead volume (Drew, 9/24):** ~1 real call/month, lots of spam calls. ~4 serious calls total, 1 closed job (Janet). Close rate ~25% on serious calls; volume is the constraint.
+
+## Visibility audit 2026-09-25 (corrected with Drew same day)
+
+- **GBP: verified, posting works** (Drew 9/25). The 6/8 "post removed / posting turned off" email and the 7/28 re-verify email are resolved; the 6/8 post is still live.
+- **Reviews: 2 Google reviews, both 5 stars** (Drew 9/25). Site said 4.9 / 47 everywhere. **Fixed 9/25:** schema reviewCount/ratingCount → 2, ratingValue → 5.0, all visible "4.9/5 Google Rating" badges and "47 customers" copy corrected across 62 pages.
+- **Confirmed true by Drew:** Licensed & Insured, 200+ projects, family-owned since 2020.
+- **Open questions for Drew:** "BBB Accredited" badge (May notes said application pending) and named testimonials (Mike R., Sarah T., David L., Nancy J., Lisa P., Jennifer M., etc.) marked up as Review schema on the homepage. Keep only if real.
+- GSC data on disk is from 6/8. Need a fresh export.
+- FB: Black Ridge Page https://www.facebook.com/p/Black-Ridge-Contracting-61574268338602/ (a Page, not a group). Auto-poster proposed, cloned from /Users/Drew/fbpost.
