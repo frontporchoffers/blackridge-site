@@ -131,7 +131,7 @@ def insert_blog_card(title: str, description: str, image_path: str, slug: str):
     html = BLOG_INDEX.read_text()
 
     # Skip if a card for this slug is already in the index
-    if f'href="{slug}.html"' in html:
+    if f'href="{slug}"' in html or f'href="{slug}.html"' in html:
         print(f"  Card for {slug} already exists in blog/index.html, skipping insert.")
         return
 
@@ -141,7 +141,7 @@ def insert_blog_card(title: str, description: str, image_path: str, slug: str):
         f'            <h3>{title}</h3>\n'
         f'            <p style="font-size:0.85rem;opacity:0.7;margin-bottom:0.5rem">{TODAY_LONG}</p>\n'
         f'            <p>{description}</p>\n'
-        f'            <a href="{slug}.html" class="btn btn-primary" style="margin-top:1rem">Read More &#8594;</a>\n'
+        f'            <a href="{slug}" class="btn btn-primary" style="margin-top:1rem">Read More &#8594;</a>\n'
         '          </div>\n'
     )
 
