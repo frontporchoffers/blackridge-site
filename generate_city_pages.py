@@ -29,7 +29,7 @@ TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Black Ridge Contracting serves {city}, IA with expert roofing, siding, gutter, and concrete services. Family-owned in Ankeny. Free estimates. Call (515) 219-4654.">
+  <meta name="description" content="Black Ridge Contracting serves {city}, IA with expert roofing, siding, gutter, and concrete services. Family-owned in Ankeny. Free estimates. Call (515) 690-7764.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://blackridgecontractor.com/areas/{slug}">
   <meta property="og:title" content="Roofing, Siding, Gutters & Concrete in {city} IA | Black Ridge Contracting">
@@ -52,7 +52,7 @@ TEMPLATE = """<!DOCTYPE html>
     "name": "Black Ridge Contracting",
     "description": "Family-owned roofing, siding, gutter, and concrete contractor serving {city}, Iowa and all of Central Iowa.",
     "url": "https://blackridgecontractor.com",
-    "telephone": "+1-515-219-4654",
+    "telephone": "+1-515-690-7764",
     "email": "drew@blackridgecontractor.com",
     "address": {{
       "@type": "PostalAddress",
@@ -115,7 +115,7 @@ TEMPLATE = """<!DOCTYPE html>
         "name": "How do I get a free estimate in {city}?",
         "acceptedAnswer": {{
           "@type": "Answer",
-          "text": "Call us at (515) 219-4654 or fill out our online form. We will schedule a free, no-obligation visit to your {city} property, inspect the work needed, and provide a clear written quote — usually within 24 hours."
+          "text": "Call us at (515) 690-7764 or fill out our online form. We will schedule a free, no-obligation visit to your {city} property, inspect the work needed, and provide a clear written quote — usually within 24 hours."
         }}
       }}
     ]
@@ -141,7 +141,7 @@ TEMPLATE = """<!DOCTYPE html>
         </div>
         <a href="../about.html">About</a>
         <a href="../contact.html">Contact</a>
-        <a href="tel:5152194654" class="nav-cta">&#9742; (515) 219-4654</a>
+        <a href="tel:5156907764" class="nav-cta">&#9742; (515) 690-7764</a>
       </div>
       <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -155,7 +155,7 @@ TEMPLATE = """<!DOCTYPE html>
     <a href="../services/concrete.html">Concrete</a>
     <a href="../about.html">About</a>
     <a href="../contact.html">Contact</a>
-    <a href="tel:5152194654" class="mobile-cta">&#9742; (515) 219-4654</a>
+    <a href="tel:5156907764" class="mobile-cta">&#9742; (515) 690-7764</a>
   </div>
 
   <header class="hero page-hero" role="banner">
@@ -168,7 +168,7 @@ TEMPLATE = """<!DOCTYPE html>
       <p class="hero-sub">Black Ridge Contracting is a family-owned exterior contractor based in Ankeny, serving {city} and {desc} with honest work and fair prices since 2020.</p>
       <div class="hero-buttons">
         <a href="../contact.html" class="btn btn-primary btn-lg">Get a Free Estimate in {city} &#8594;</a>
-        <a href="tel:5152194654" class="btn btn-secondary btn-lg">&#9742; Call (515) 219-4654</a>
+        <a href="tel:5156907764" class="btn btn-secondary btn-lg">&#9742; Call (515) 690-7764</a>
       </div>
     </div>
   </header>
@@ -285,7 +285,7 @@ TEMPLATE = """<!DOCTYPE html>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">How do I get a free estimate in {city}?</button>
-            <div class="faq-answer" role="region"><p>Call us at (515) 219-4654 or fill out our online form. We will schedule a free, no-obligation visit to your {city} property, inspect the work needed, and provide a clear written quote — usually within 24 hours.</p></div>
+            <div class="faq-answer" role="region"><p>Call us at (515) 690-7764 or fill out our online form. We will schedule a free, no-obligation visit to your {city} property, inspect the work needed, and provide a clear written quote — usually within 24 hours.</p></div>
           </div>
         </div>
       </div>
@@ -308,7 +308,7 @@ TEMPLATE = """<!DOCTYPE html>
         <h2 id="city-cta-title">Ready to Start Your {city} Project? Get a Free Estimate.</h2>
         <p>Join 200+ Central Iowa homeowners who trust Black Ridge Contracting. Call today or fill out our form — we respond within 24 hours.</p>
         <a href="../contact.html" class="btn btn-primary btn-lg">Get Your Free Estimate &#8594;</a>
-        <a href="tel:5152194654" class="btn btn-secondary btn-lg">&#9742; Call (515) 219-4654</a>
+        <a href="tel:5156907764" class="btn btn-secondary btn-lg">&#9742; Call (515) 690-7764</a>
       </div>
     </section>
   </main>
@@ -340,7 +340,7 @@ TEMPLATE = """<!DOCTYPE html>
         </div>
         <div>
           <h3>Contact Us</h3>
-          <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#9742;</span><a href="tel:5152194654">(515) 219-4654</a></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#9742;</span><a href="tel:5156907764">(515) 690-7764</a></div>
           <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#9993;</span><a href="mailto:drew@blackridgecontractor.com">drew@blackridgecontractor.com</a></div>
           <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#128205;</span><span>Ankeny, IA 50021</span></div>
           <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#128337;</span><span>Mon-Fri 7am-6pm, Sat 8am-2pm</span></div>

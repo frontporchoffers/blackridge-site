@@ -1,8 +1,8 @@
 # Black Ridge Contracting — Project Progress
 
 **Site:** https://blackridgecontractor.com
-**Local path:** `/Users/Drew/Desktop/Claude/claude-skills-main/Projects/local-seo-agency/brc-site/`
-**Host:** Netlify (drag-and-drop deploy from this folder)
+**Local path:** `/Users/Drew/Desktop/Claude/claude-skills-main/Projects/Blackridge-Construction/brc-site/` (moved 2026-09-25)
+**Host:** Vercel, auto-deploys on `git push origin main`
 **Last updated:** 2026-05-06
 
 ---
@@ -22,7 +22,7 @@ Indexing throttle is broken (Discovered — not indexed went from 28 → 0). Now
 - Netlify config: HSTS, CSP, cache headers, 404 page
 - Internal linking: homepage links to all services + all areas; indexed pages link to unindexed via nav/footer/service-area-tag blocks
 - Canonical tags on every page
-- Contact: (515) 219-4654, drew@blackridgecontractor.com
+- Contact: (515) 690-7764, drew@blackridgecontractor.com
 
 ### Phase 2 — Schema (done 2026-04-20)
 - about.html and portfolio.html upgraded to full LocalBusiness + AboutPage/CollectionPage + FAQPage
@@ -120,6 +120,15 @@ Indexing throttle is broken (Discovered — not indexed went from 28 → 0). Now
 - **GBP: verified, posting works** (Drew 9/25). The 6/8 "post removed / posting turned off" email and the 7/28 re-verify email are resolved; the 6/8 post is still live.
 - **Reviews: 2 Google reviews, both 5 stars** (Drew 9/25). Site said 4.9 / 47 everywhere. **Fixed 9/25:** schema reviewCount/ratingCount → 2, ratingValue → 5.0, all visible "4.9/5 Google Rating" badges and "47 customers" copy corrected across 62 pages.
 - **Confirmed true by Drew:** Licensed & Insured, 200+ projects, family-owned since 2020.
-- **Open questions for Drew:** "BBB Accredited" badge (May notes said application pending) and named testimonials (Mike R., Sarah T., David L., Nancy J., Lisa P., Jennifer M., etc.) marked up as Review schema on the homepage. Keep only if real.
+- **BBB Accredited: confirmed by Drew 9/25.** Old 1615 SW Main St on FB/MapQuest: Drew leaving as-is. **Still open:** named testimonials (Mike R., Sarah T., David L., Nancy J., Lisa P., Jennifer M., etc.) marked up as Review schema on the homepage. Keep only if real.
 - GSC data on disk is from 6/8. Need a fresh export.
 - FB: Black Ridge Page https://www.facebook.com/p/Black-Ridge-Contracting-61574268338602/ (a Page, not a group). Auto-poster proposed, cloned from /Users/Drew/fbpost.
+## Sitemap fix 2026-10-01
+
+- GSC showed the sitemap last read 5/6/2026. Live sitemap was healthy (200 to Googlebot, valid XML, referenced in robots.txt) but was missing 2 live blog posts (older-home-renovation-cost-knob-and-tube, when-renovation-costs-more-than-sale-price) and had stale lastmods.
+- Fixed + deployed: 56 URLs, lastmod = each page's real last git change.
+- **Blocked:** the claude-seo service account (claude-seo-gsc@hebererhomes.iam.gserviceaccount.com) only has the hebererhomes.com property. Drew to add it as a Full user on the blackridgecontractor.com property, then: resubmit sitemap via API + URL-inspect all 56 pages.
+- **10/1 follow-up:** service account added (Full). Sitemap resubmitted via API. URL inspection of all 56: **29 indexed, 23 "unknown to Google" (the /blog index, 20 blog posts, /areas/grimes, /services/remodeling), 4 crawled-not-indexed** (/about, /areas/urbandale, 2 blog posts). Report: gsc-reports/url-inspection-2026-10-01.json.
+- **Root cause found + fixed 10/1:** ~2,900 internal links pointed at `.html` URLs that Vercel 308-redirects; nav/footer "blog/" links, the /blog canonical, breadcrumb schema, and the sitemap /blog/ entry all pointed at redirects. All now point at final clean URLs (0 unresolved internal links). Publish script updated so new blog cards use clean URLs. /services/remodeling has 0 inbound internal links (orphan), still open.
+- **90-day GSC (7/2-9/29):** 69 clicks / 9,329 impr / avg pos 29.7. Clicks trending down (30 Jul, 28 Aug, 11 Sep). 12 clicks from Pakistan (bots). Every query-level click is a brand search (5 of 9 = "black ridge exteriors", the competitor). Money queries (kitchen remodel des moines, roof inspection, roof repair) sit at positions 25-60 with 0 clicks. Data: gsc-reports/queries-90d-2026-10-01.json.
+- Re-inspect the 23 unknown URLs ~10/15.

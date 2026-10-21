@@ -23,3 +23,6 @@ pictures/roofing-jpg/
 
 # Google Indexing API queue file (workflow, not for deploy)
 index_queue.txt
+
+# Customer job files — must never deploy
+jobs/
