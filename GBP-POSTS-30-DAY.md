@@ -169,7 +169,7 @@ Most siding jobs we do, we recommend fiber cement. Better impact resistance for 
 
 ### Day 22
 **Storm damage roof tip**
-After a hail storm, do two things before calling your insurance. Take photos of any visible damage from the ground, and check the air conditioner condenser unit on the side of the house. If the AC fins are bent, that's documented impact velocity and helps your claim. Then call your insurance.
+After a hail storm, do two things. Take photos of any visible damage from the ground, and check the air conditioner condenser unit on the side of the house. If the AC fins are bent, that's a sign hail came through. Then call your insurance agent and get a free inspection scheduled.
 
 *Button:* Learn more → /blog/iowa-storm-damage-roof-repair
 *Image:* storm-clouds.jpg or Roofing IA.jpg

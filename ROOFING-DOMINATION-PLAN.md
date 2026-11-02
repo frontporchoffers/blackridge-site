@@ -81,7 +81,7 @@ Roofing-first calendar locked from prior message. First post = *Iowa Hail Damage
 1. Hero opens with 134–167 word AI-citable definition block (materials cost, timeline, when-to-replace)
 2. Materials comparison table (asphalt / metal / cedar / EPDM: cost, lifespan, Iowa fit, warranty)
 3. Iowa storm playbook (hail damage, first-72-hour homeowner checklist)
-4. Insurance claim walkthrough (5-step process, adjuster expectations)
+4. ~~Insurance claim walkthrough (5-step process, adjuster expectations)~~ Dropped 11/2/2026: Iowa Code 103A.71 and 522C. Do not rebuild.
 5. Neighborhood callouts → link to enhanced `/areas/{city}` pages
 6. Sub-service anchor links → link to `/services/roofing/{sub}` pages
 7. Expanded FAQ (add "What roofing materials handle Iowa hail best?" + "Do I need a permit to replace my roof in Des Moines?")
