@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit and push if anything changed
         run: |
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "frontporchoffers@gmail.com"
           git config user.name "Scheduled Publisher"
           if [[ -n $(git status --porcelain) ]]; then
             git add -A
