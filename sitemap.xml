@@ -90,13 +90,31 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://blackridgecontractor.com/services/kitchen-remodeling/des-moines</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://blackridgecontractor.com/services/kitchen-remodeling/ankeny</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://blackridgecontractor.com/services/bathroom-remodeling/des-moines</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://blackridgecontractor.com/services/bathroom-remodeling/ankeny</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blackridgecontractor.com/services/basement-finishing/des-moines</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -211,7 +229,7 @@
   </url>
   <url>
     <loc>https://blackridgecontractor.com/areas/des-moines</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
