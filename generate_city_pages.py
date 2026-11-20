@@ -121,6 +121,7 @@ TEMPLATE = """<!DOCTYPE html>
     ]
   }}
   </script>
+  <script src="/tags.js" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -346,7 +347,7 @@ TEMPLATE = """<!DOCTYPE html>
           <div class="footer-contact-item"><span class="footer-contact-icon" aria-hidden="true">&#128337;</span><span>Mon-Fri 7am-6pm, Sat 8am-2pm</span></div>
         </div>
       </div>
-      <div class="footer-bottom">&copy; 2026 Black Ridge Contracting. All rights reserved. Family-owned in Ankeny, Iowa.</div>
+      <div class="footer-bottom">&copy; 2026 Black Ridge Contracting. All rights reserved. Family-owned in Ankeny, Iowa.</div><div class="footer-privacy" style="padding:0 0 24px;text-align:center;font-size:0.85rem;">This site uses cookies from Google and Meta to measure visits and show our ads. <a href="/privacy" style="color:inherit;text-decoration:underline;">Privacy and your choices</a>.</div>
     </div>
   </footer>
 

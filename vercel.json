@@ -16,7 +16,7 @@
         {"key": "X-Frame-Options", "value": "DENY"},
         {"key": "X-Content-Type-Options", "value": "nosniff"},
         {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
-        {"key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data:; font-src 'self'; connect-src 'self' https://formspree.io; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;"},
+        {"key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data: https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com https://connect.facebook.net; font-src 'self'; connect-src 'self' https://formspree.io https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com https://www.facebook.com https://connect.facebook.net https://*.on.aws https://*.cloud.run; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;"},
         {"key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains"},
         {"key": "X-XSS-Protection", "value": "1; mode=block"},
         {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()"}

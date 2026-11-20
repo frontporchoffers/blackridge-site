@@ -1,0 +1,7 @@
+# Internal notes, generators and reports. Vercel serves every file in the
+# repo, so anything not meant for the public web has to be listed here.
+*.py
+*.md
+lighthouse-*.json
+.github/
+.gitignore
